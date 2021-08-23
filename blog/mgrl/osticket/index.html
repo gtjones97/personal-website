@@ -16,6 +16,17 @@
     <link type="text/css" rel="stylesheet" href="/css/color.css">
     <!--=============== favicons ===============-->
     <link rel="shortcut icon" href="/images/favicon.ico">
+
+    <style>
+        .heading_link{
+            color: #789174;
+        }
+
+        .heading_link:hover{
+            color: #60745c;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -67,11 +78,12 @@
                         <div class="fl-wrap">
 
                             <div class="row">
-                                <div class="col-md-12">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-10">
                                     <div class="details-wrap fl-wrap">
-                                        <h3>Setting up an <span>osTicket</span>&#47;<span>Apache Webserver</span> Ticketing System</h3>
-                                        <div class="parallax-header"><span style="color: #df6c32;">Category : </span><a>Java</a></div>
-                                        <div class="gallery-items min-pad  lightgallery three-column" style="position: relative; height: 813.49px;">
+                                        <h3>Building a Ticketing System Using <span><a class="heading_link" href="https://osticket.com/" target="_blank">osTicket</a>&#47;<a class="heading_link" href="https://ubuntu.com/" target="_blank">Ubuntu</a>&#47;<a class="heading_link" href="https://httpd.apache.org/" target="_blank">Apache</a>&#47;<a class="heading_link" href="https://www.mysql.com/" target="_blank">MySQL</a>&#47;<a class="heading_link" href="https://www.php.net/" target="_blank">PHP</a></h3>
+                                        <div class="parallax-header"><span style="color: #df6c32;">Category : </span><a>Web Development</a><a>Server Administration</a></div>
+                                        <div class="gallery-items min-pad  lightgallery three-column" style="position: relative; height: 813.49px; margin: 30px 0 30px 0">
                                             <!-- gallery-item-->
                                             <div class="gallery-item" style="position: absolute; left: 0px; top: 0px;">
                                                 <div class="grid-item-holder">
@@ -116,7 +128,12 @@
 
 
                                         <div class="clearfix"></div>
-                                        <h4>Chick-fil-A One&trade; is a tiered membership program that gives users the ability to earn points with every purchase made at Chick-fil-A through their smartphone. This is a Java problem proposal/solution that will allow users to input point values and receive more information and redeemable menu items computed by the program.</h4>
+                                        <h4>Ever since I joined the Middle Georgia Regional Library system, I had wanted to create a new ticketing system for everyone to use because Google Forms was lacking a lot of useful features that would make our jobs much easier. It began when I noticed that my department was spending a considerable amount of time communicating information<i>about</i> tickets before we had even begun the process of solving them. Questions such as:  <i>Have you seen that ticket from John yet?</i>,<i>Did you ever get a response?</i>, and  Help desk agents, when using Forms, are not able to directly respond to tickets, correspond with each other about tickets, produce statistics, mark tickets resolved, and many other things. Also, from time to time the Forms would get corrupted because of staff intervention. It did the job, but also came with a lot of problems, so I decided that the open-source and free osTicket system was a better option for the library.
+
+                                            So, to create an osTicket system, I first needed a web server. There happened to be an unused server machine (a Dell PowerEdge T110 II) running Windows Server 2016, which would have been a contender to host the server using IIS. However, I felt that using Windows Server was overkill. There were too many features that weren’t being used, and could stand to be an issue at a later point in time (e.g., Windows licenses).
+                                            
+                                            With this in mind, I decided to add an Ubuntu Linux partition to this server machine (still keeping the Windows Server partition intact). When booting the server, a user is greeted with a GRUB menu, letting them decide which OS they would like to use. 
+                                            </h4>
                                     </div>
                                     <div class="pr-list fl-wrap">
                                         <div class="row">

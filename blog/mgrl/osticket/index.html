@@ -45,13 +45,21 @@
     text-align: left;
     font-weight: bold;
     font-size: 30px;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 20px;
     position: relative;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
         }
 
+        table, tr, td, th {
+            border: 2px solid #666;
+            padding: 5px 5px 5px 5px;
+        }
+
+        th {
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -161,8 +169,45 @@
                                             
                                         I started to research our options and found that there are many cloud providers that could get us going in no time, but I was hesitant to pursue any of those because they cost money, and it would not fare well for my pitch if I was adding a new recurring cost to our department when Google Forms is free and gets the job done (even if it is not built to be a ticketing system). Coincedentally, around that same time, my boss told me that there was a server machine (a Dell PowerEdge T110 II) from the past administration that she had no use for, and I could tinker with it if I wanted to. Because I wanted a free option and had a server available, I settled on the fact that I was going to host my own ticketing system at the library using this machine.<br><br>
                                         
-                                        After coming to this realization, my research became very easy. I knew I wanted something <b>free</b> and open source, capable of hosting myself, and packed with all the feauters I thought we would need. Welcome: <a href="https://osticket.com/" target="_blank">osTicket</a>. I decided to install Ubuntu on the server machine to host it because it is also free, open source, lightweight, has a huge community to provide support, and within my realm of experience. I could have used the Windows Server 2016 partition on the machine, but I felt that would be overkill in this case.
-                                            </h4>
+                                        After coming to this realization, my research became very easy. I knew I wanted something <b>free</b> and open source, capable of hosting myself, and packed with all the feauters I thought we would need. Welcome: <a href="https://osticket.com/" target="_blank">osTicket</a>. I decided to install Ubuntu on the server machine to host it because it is also free, open source, lightweight, has a huge community to provide support, and within my realm of experience. I could have used the Windows Server 2016 partition on the machine, but I felt that would be overkill in this case.<br><br>
+                        
+                                    <span class="custom_heading">implementation</span>
+                                    The stack is defined as follows:
+                                    <table style="margin-top: 10px;">
+                                        <thead>
+                                          <tr>
+                                            <th><b>Program Name</b></th>
+                                            <th><b>Purpose</b></th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>osTicket</td>
+                                            <td>Provides all of the web pages, functions, and setup; it is the backbone of the ticketing system.</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Ubuntu Linux 20.04 </td>
+                                            <td>The OS that houses everything.</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Apache2 Web Server</td>
+                                            <td>Makes the server accessible to the open internet, broadcasts on ports 80 (HTTP) &amp; 443 (HTTPS)</td>
+                                          </tr>
+                                          <tr>
+                                            <td>SQL Server</td>
+                                            <td>Acts as a database engine. All information such as tickets, users, configurations are stored in the SQL database. This is how the web server has access to all the information it wants to serve.</td>
+                                          </tr>
+                                          <tr>
+                                            <td>PHP 7.2</td>
+                                            <td>Common server-side scripting language that enables the web server to communicate with the SQL server on the same machine.</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Certbot</td>
+                                            <td>A command line program that enabled the automatic renewal of SSL certificates (required for HTTPS)</td>
+                                          </tr>
+                                        </tbody>
+                                        </table>
+                                    </h4>
                                     </div>
                                     <div class="pr-list fl-wrap">
                                         <div class="row">

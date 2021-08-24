@@ -52,8 +52,11 @@
     text-transform: uppercase;
         }
 
+        table{
+            table-layout: fixed;
+        }
         table, tr, td, th {
-            border: 2px solid #666;
+            border: 1px solid #666;
             padding: 5px 5px 5px 5px;
         }
 
@@ -176,33 +179,33 @@
                                     <table style="margin-top: 10px;">
                                         <thead>
                                           <tr>
-                                            <th><b>Program Name</b></th>
+                                            <th style="width: 150px;"><b>Program Name</b></th>
                                             <th><b>Purpose</b></th>
                                           </tr>
                                         </thead>
                                         <tbody>
                                           <tr>
-                                            <td>osTicket</td>
+                                            <td style="text-align: center;">osTicket</td>
                                             <td>Provides all of the web pages, functions, and setup; it is the backbone of the ticketing system.</td>
                                           </tr>
                                           <tr>
-                                            <td>Ubuntu Linux 20.04 </td>
+                                            <td style="text-align: center;">Ubuntu Linux 20.04 </td>
                                             <td>The OS that houses everything.</td>
                                           </tr>
                                           <tr>
-                                            <td>Apache2 Web Server</td>
+                                            <td style="text-align: center;">Apache2</td>
                                             <td>Makes the server accessible to the open internet, broadcasts on ports 80 (HTTP) &amp; 443 (HTTPS)</td>
                                           </tr>
                                           <tr>
-                                            <td>SQL Server</td>
+                                            <td style="text-align: center;">MySQL Server</td>
                                             <td>Acts as a database engine. All information such as tickets, users, configurations are stored in the SQL database. This is how the web server has access to all the information it wants to serve.</td>
                                           </tr>
                                           <tr>
-                                            <td>PHP 7.2</td>
+                                            <td style="text-align: center;">PHP 7.2</td>
                                             <td>Common server-side scripting language that enables the web server to communicate with the SQL server on the same machine.</td>
                                           </tr>
                                           <tr>
-                                            <td>Certbot</td>
+                                            <td style="text-align: center;">Certbot</td>
                                             <td>A command line program that enabled the automatic renewal of SSL certificates (required for HTTPS)</td>
                                           </tr>
                                         </tbody>

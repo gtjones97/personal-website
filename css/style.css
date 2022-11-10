@@ -4084,6 +4084,7 @@ section.parallax-section .section-title:before {
 	top: 10px;
 	left: 5px;
 }
+/*
 .process-wrap li:before,
 .serv-wrap:before {
 	content: '';
@@ -4103,10 +4104,12 @@ section.parallax-section .section-title:before {
 	color: #999;
 	font-size: 16px;
 }
+
 .process-wrap li:last-child:after {
 	color: #666;
 	content: '\f00c';
 }
+*/
 .process-numder {
 	position: absolute;
 	bottom: -20px;

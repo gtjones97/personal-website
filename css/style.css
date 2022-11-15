@@ -58,12 +58,11 @@ body {
 	font-family: 'Poppins', sans-serif;
 	text-align: left;
 }
-.pin:after {
-	content: "Jones : ";
-	position: absolute;
-	left: -100%;
-	color: rgba(255, 255, 255, 0.51);
+
+.process-wrap li .process-details a:hover {
+	color: white;
 }
+
 .pin:before {
 	content: "Loading";
 	position: absolute;

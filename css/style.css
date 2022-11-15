@@ -59,9 +59,7 @@ body {
 	text-align: left;
 }
 
-.process-wrap li .process-details a:hover {
-	color: white;
-}
+
 
 .pin:before {
 	content: "Loading";

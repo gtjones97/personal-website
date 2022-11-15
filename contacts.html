@@ -166,24 +166,29 @@
 
                                     -->
 
-                                                <form name="contact" method="POST" data-netlify="true">
-                                                    <p>
-                                                      <label>Your Name: <input type="text" name="name" /></label>
-                                                    </p>
-                                                    <p>
-                                                      <label>Your Email: <input type="email" name="email" /></label>
-                                                    </p>
-                                                    <p>
-                                                      <label>Your Role: <select name="role[]" multiple>
-                                                        <option value="leader">Leader</option>
-                                                        <option value="follower">Follower</option>
-                                                      </select></label>
-                                                    </p>
-                                                    <p>
-                                                      <label>Message: <textarea name="message"></textarea></label>
-                                                    </p>
-                                                    <p>
-                                                      <button type="submit">Send</button>
+                                                <form class ="custom-form" name="contact" method="POST" data-netlify="true">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                      <label><i class="fal fa-user"></i></label>
+                                                      <input type="text" name="name" placeholder="Your Name *" value="">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label><i class="fal fa-envelope"></i></label>
+                                                        <input type="email" name="email" placeholder="Email Address *" value="">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label><i class="fal fa-mobile-android"></i></label>
+                                                        <input type="text" name="phone" placeholder="Phone *" value="">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label><i class="fal fa-search"></i></label>
+                                                        <input type="text" name="subject" placeholder="Subject *" value="">
+                                                    </div>
+
+                                                    <textarea name="message" cols="40" rows="3" placeholder="Your Message:"></textarea>
+                                                    <div class="clearfix"></div>
+
+                                                    <button type="submit" class="btn float-btn flat-btn color-btn">Send</button>
                                                     </p>
                                                   </form>
 

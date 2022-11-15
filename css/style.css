@@ -5500,7 +5500,7 @@ section.parallax-section .section-title:before {
 	font-size: 13px
 }
 .custom-form textarea {
-	height: 200px;
+	height: 150px;
 	resize: none;
 	padding: 25px 20px;
 	-webkit-appearance: none;
